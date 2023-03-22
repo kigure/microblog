@@ -16,4 +16,4 @@ class Comment(models.Model):
     name = models.CharField(max_length=255)
     email = models.EmailField()
     body = models.TextField()
-    posted_data = models.DateTimeField(auto=True)
+    posted_data = models.DateTimeField(auto_now=True)
